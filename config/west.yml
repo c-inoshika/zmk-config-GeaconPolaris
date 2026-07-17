@@ -12,7 +12,7 @@ manifest:
     - name: zmk
       # remote: zmkfirmware
       remote: te9no
-      revision: v0.3-branch+dya
+      revision: 7fd6a70261963be9bc0cb4102e6bad339e115c39
       import: app/west.yml
 
 # ZMK RGB LED Widget
@@ -61,7 +61,7 @@ manifest:
     - name: zmk-nice-oled
       # remote: mctechnology17
       url: https://github.com/te9no/zmk-nice-oled
-      revision: main
+      revision: 472c6cacd741a4e400dc7e3e36067a4564162cc9
       path: modules/zmk-nice-oled
 
 # Trackpad
