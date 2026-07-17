@@ -1,0 +1,13 @@
+{
+  "repository": "te9no/zmk-config-GeaconPolaris",
+  "branch": "codex/polaris-lpps-zmk-0.3",
+  "target": "all",
+  "status": "passing",
+  "raw_status": "success",
+  "color": "#2ea44f",
+  "sha": "f5cdc524d353e904697cdbc1d76c2805930c8ce3",
+  "run_id": "29591594081",
+  "run_number": "185",
+  "run_url": "https://github.com/te9no/zmk-config-GeaconPolaris/actions/runs/29591594081",
+  "generated_at": "2026-07-17T15:27:40Z"
+}
