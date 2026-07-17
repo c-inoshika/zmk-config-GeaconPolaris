@@ -79,6 +79,11 @@ manifest:
     #   path: modules/cirque-input-module
 
 # Analog input
+    - name: ads1220-zephyr-module
+      revision: 22e6fc3e1c6b8fc26cede8700ed4535ceb799160
+      url: https://github.com/te9no/ads1220-zephyr-module
+      path: modules/ads1220-zephyr-module
+
     - name: zmk-analog-input-driver
       url: https://github.com/badjeff/zmk-analog-input-driver
       revision: main
@@ -99,4 +104,3 @@ manifest:
     #   path: modules/zmk-feature-cdc-acm-bootloader-trigger
   self:
     path: config
-
