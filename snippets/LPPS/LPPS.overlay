@@ -1,20 +1,8 @@
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/spi/spi.h>
-#include <zephyr/dt-bindings/gpio/gpio_ads1220.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-    gpio_ads1220: gpio_ads1220 {
-        compatible = "ti,ads1220-gpio";
-        status = "okay";
-        gpio-controller;
-        #gpio-cells = <2>;
-        dev-reg = <0>;
-        idac-ua-high = <10>;
-        idac-ua-low = <0>;
-        skip-reg-write-high;
-    };
-
     lpps_input: lpps_input {
         compatible = "zmk,input-listener";
         device = <&lpps_axis>;
@@ -23,7 +11,7 @@
     lpps_axis: analog_axis_hires_0 {
         compatible = "analog-axis-hires";
         status = "okay";
-        poll-period-downshift-ms = <15 5000 100>;
+        poll-period-downshift-ms = <8 5000 100>;
 
         axis-x {
             status = "okay";
