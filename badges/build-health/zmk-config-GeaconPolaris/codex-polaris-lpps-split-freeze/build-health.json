@@ -1,0 +1,13 @@
+{
+  "repository": "te9no/zmk-config-GeaconPolaris",
+  "branch": "codex/polaris-lpps-split-freeze",
+  "target": "all",
+  "status": "passing",
+  "raw_status": "success",
+  "color": "#2ea44f",
+  "sha": "28be0fb57cab9adddf269bdf1b11decc7b8b205a",
+  "run_id": "30228533476",
+  "run_number": "202",
+  "run_url": "https://github.com/te9no/zmk-config-GeaconPolaris/actions/runs/30228533476",
+  "generated_at": "2026-07-27T01:02:17Z"
+}
