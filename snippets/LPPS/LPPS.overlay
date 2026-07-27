@@ -17,7 +17,7 @@
         y-codes = <INPUT_REL_Y>;
         xy-to-scroll-enabled;
         track-remainders;
-        scale-divisor = <1>;
+        scale-divisor = <8>;
         #input-processor-cells = <0>;
     };
 
@@ -25,6 +25,7 @@
         compatible = "analog-axis-hires";
         status = "okay";
         poll-period-downshift-ms = <8 5000 100>;
+        dominant-axis-lock;
 
         axis-x {
             status = "okay";
