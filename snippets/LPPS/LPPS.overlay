@@ -33,9 +33,10 @@
             in-min = <(0 - 8000)>;
             in-max = <(0 + 8000)>;
             in-calib-cycle = <100>;
-            in-deadzone = <600>;
+            in-deadzone = <1000>;
             out-min = <(-10)>;
             out-max = <10>;
+            invert-output;
             skip-change-comparator;
             zephyr,axis-type = <INPUT_EV_REL>;
             zephyr,axis = <INPUT_REL_X>;
@@ -47,7 +48,7 @@
             in-min = <(0 - 8000)>;
             in-max = <(0 + 8000)>;
             in-calib-cycle = <100>;
-            in-deadzone = <600>;
+            in-deadzone = <1000>;
             out-min = <(-10)>;
             out-max = <10>;
             skip-change-comparator;
