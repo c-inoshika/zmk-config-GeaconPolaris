@@ -17,7 +17,7 @@
         y-codes = <INPUT_REL_Y>;
         xy-to-scroll-enabled;
         track-remainders;
-        scale-divisor = <1>;
+        scale-divisor = <8>;
         #input-processor-cells = <0>;
     };
 
@@ -25,6 +25,7 @@
         compatible = "analog-axis-hires";
         status = "okay";
         poll-period-downshift-ms = <8 5000 100>;
+        dominant-axis-lock;
 
         axis-x {
             status = "okay";
@@ -32,9 +33,10 @@
             in-min = <(0 - 8000)>;
             in-max = <(0 + 8000)>;
             in-calib-cycle = <100>;
-            in-deadzone = <600>;
+            in-deadzone = <1000>;
             out-min = <(-10)>;
             out-max = <10>;
+            invert-output;
             skip-change-comparator;
             zephyr,axis-type = <INPUT_EV_REL>;
             zephyr,axis = <INPUT_REL_X>;
@@ -46,7 +48,7 @@
             in-min = <(0 - 8000)>;
             in-max = <(0 + 8000)>;
             in-calib-cycle = <100>;
-            in-deadzone = <600>;
+            in-deadzone = <1000>;
             out-min = <(-10)>;
             out-max = <10>;
             skip-change-comparator;
